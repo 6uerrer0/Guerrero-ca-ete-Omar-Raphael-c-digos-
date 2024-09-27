@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Mascota con Imagen</title>
+</head>
+<body>
+    <h1 style="color: #4CAF50;">Formulario de Mascota</h1>
+    
+    <form action="resultados_mascota.html" method="get" enctype="multipart/form-data">
+        <label for="nombre" style="font-family: 'serif'; font-size: 20px;">Nombre de la mascota:</label>
+        <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+        <label for="especie" style="font-family: 'serif'; font-size: 20px;">Especie:</label>
+        <select id="especie" name="especie" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+        </select>
+
+        <label for="imagen" style="font-family: 'serif'; font-size: 20px;">Subir imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+        <input type="submit" value="Enviar" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 20px;">
+    </form>
+</body>
+</html>

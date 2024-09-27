@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de Mascotas</title>
+</head>
+<body>
+    <h1 style="color: #4CAF50;">Formulario de Mascotas</h1>
+    
+    <form action="pagina_ficticia.html" method="get">
+        <label for="nombre" style="font-family: 'serif'; font-size: 20px;">Nombre de la mascota:</label>
+        <input type="text" id="nombre" name="nombre" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" required>
+
+        <label for="especie" style="font-family: 'serif'; font-size: 20px;">Especie:</label>
+        <select id="especie" name="especie" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" required>
+            <option value="perro">Perro</option>
+            <option value="gato">Gato</option>
+            <option value="conejo">Conejo</option>
+            <option value="loro">Loro</option>
+        </select>
+
+        <label for="tamano" style="font-family: 'serif'; font-size: 20px;">Tamaño:</label>
+        <select id="tamano" name="tamano" style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;" required>
+            <option value="pequeña">Pequeña</option>
+            <option value="mediana">Mediana</option>
+            <option value="grande">Grande</option>
+        </select>
+
+        <label style="font-family: 'serif'; font-size: 20px;">¿Está vacunado?</label><br>
+        <input type="radio" id="vacunado_si" name="vacunado" value="si" required>
+        <label for="vacunado_si" style="font-family: 'serif'; font-size: 20px;">Sí</label>
+        <input type="radio" id="vacunado_no" name="vacunado" value="no" required>
+        <label for="vacunado_no" style="font-family: 'serif'; font-size: 20px;">No</label><br><br>
+
+        <label style="font-family: 'serif'; font-size: 20px;">Sexo:</label><br>
+        <input type="radio" id="macho" name="sexo" value="macho" required>
+        <label for="macho" style="font-family: 'serif'; font-size: 20px;">Macho</label>
+        <input type="radio" id="hembra" name="sexo" value="hembra" required>
+        <label for="hembra" style="font-family: 'serif'; font-size: 20px;">Hembra</label><br><br>
+
+        <label for="comentarios" style="font-family: 'serif'; font-size: 20px;">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe aquí tus comentarios..." style="width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; border-radius: 4px;"></textarea><br>
+
+        <input type="submit" value="Enviar" style="background-color: #4CAF50; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; font-size: 20px;">
+    </form>
+</body>
+</html>
